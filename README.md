@@ -11,6 +11,9 @@ e.g. for my example repl [keep_alive_example](https://replit.com/@qwerdenkerXD/k
 Everything after the username is interpreted as command line call, so passing args to scripts is no problem. Here it would be:<br>
 `... python main.py arg1 arg2 arg3`
 
-Hit `Run` and you are done.<br>
+You need to add python to your repl because it's used to host the keep-alive-server.<br>
+If you serve a custom server by yourself, like [here](https://replit.com/@qwerdenkerXD/gus), this is not necessary. But if you serve it with python, it may not work. This needs to be workarounded, so feel free to contribute.
+
+Then hit `Run` and you are done.<br>
 That's it, no external tools needed, the repl keeps itself alive forever.<br>
 Cheers
