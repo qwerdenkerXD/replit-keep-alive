@@ -11,5 +11,6 @@ e.g. for my example repl [keep_alive_example](https://replit.com/@qwerdenkerXD/k
 Everything after the username is interpreted as command line call, so passing args to scripts is no problem. Here it would be:<br>
 `... python main.py arg1 arg2 arg3`
 
+Hit `Run` and you are done.<br>
 That's it, no external tools needed, the repl keeps itself alive forever.<br>
 Cheers
