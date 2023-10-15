@@ -1,9 +1,9 @@
 #!/usr/env bash
 
-# Usage: run_forever.sh <REPL_NAME> <USER_NAME> <RUN-COMMAND>
+# Usage: run_forever.sh <RUN-COMMAND> ...
 
 # run project in background
-${@:3} &
+$* &
 
 # start server in background for HTTP requests to keep alive
 python -c "from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -28,6 +28,6 @@ httpd.serve_forever()" &
 
 while true
 do
-  curl -s https://$1.$2.repl.co > /dev/null
+  curl -s https://$REPL_NAME.id.repl.co > /dev/null
   sleep 180
 done
