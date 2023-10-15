@@ -28,6 +28,6 @@ httpd.serve_forever()" &
 
 while true
 do
-  curl -s https://$REPL_NAME.id.repl.co > /dev/null
+  curl -s https://$REPL_ID.id.repl.co > /dev/null
   sleep 180
 done
